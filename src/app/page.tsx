@@ -1,5 +1,6 @@
 'use client';
 import ProductShowcase from '../components/ProductShowcase';
+import ContactSection from '../components/ContactSection';
 
 export default function Home() {
   return (
@@ -17,6 +18,9 @@ export default function Home() {
 
       {/* Product Section */}
       <ProductShowcase />
+
+      {/* Contact Section */}
+      <ContactSection />
     </main>
   );
 }

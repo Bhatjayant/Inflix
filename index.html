@@ -5,11 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inflix Pharma | Interactive Catalog</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>.item { transition: all 0.3s ease; }</style>
+    <style>
+        .item { transition: all 0.3s ease; }
+        @keyframes bounce { 0%, 100% { transform: translateY(-10%); } 50% { transform: translateY(0); } }
+        .whatsapp-bounce { animation: bounce 1s infinite; }
+    </style>
 </head>
 <body class="bg-slate-50 text-slate-900">
 
     <nav class="p-12 text-center text-3xl font-serif font-bold tracking-tighter">INFLIX PHARMA</nav>
+
+    <div class="fixed right-6 bottom-24 flex flex-col gap-4 z-50">
+        <a href="#" class="bg-blue-600 p-3 rounded-full text-white shadow-lg hover:scale-110">f</a>
+        <a href="#" class="bg-pink-600 p-3 rounded-full text-white shadow-lg hover:scale-110">ig</a>
+        <a href="#" class="bg-sky-500 p-3 rounded-full text-white shadow-lg hover:scale-110">in</a>
+    </div>
+
+    <a href="https://wa.me/918874438874" class="fixed right-6 bottom-6 bg-green-500 p-4 rounded-full text-white shadow-2xl z-50 whatsapp-bounce">
+        WhatsApp
+    </a>
 
     <div class="max-w-6xl mx-auto px-6 pb-20">
         <div class="flex flex-wrap gap-4 justify-center mb-12">
@@ -29,14 +43,12 @@
             <div class="item pain p-6 bg-white rounded-2xl shadow-sm"><h3 class="font-bold">HittVit-12™</h3><p class="text-xs text-blue-600 font-bold uppercase">Neuro-Care</p></div>
             <div class="item pain p-6 bg-white rounded-2xl shadow-sm"><h3 class="font-bold">ParaCeta™</h3><p class="text-xs text-blue-600 font-bold uppercase">Analgesic</p></div>
             <div class="item pain p-6 bg-white rounded-2xl shadow-sm"><h3 class="font-bold">Plus-P™</h3><p class="text-xs text-blue-600 font-bold uppercase">Analgesic</p></div>
-            
             <div class="item nutrition p-6 bg-white rounded-2xl shadow-sm"><h3 class="font-bold">inflix-Gold™</h3><p class="text-xs text-blue-600 font-bold uppercase">Multinutrient</p></div>
             <div class="item nutrition p-6 bg-white rounded-2xl shadow-sm"><h3 class="font-bold">inflix-Gold™ (Sachet)</h3><p class="text-xs text-blue-600 font-bold uppercase">Energy Booster</p></div>
             <div class="item nutrition p-6 bg-white rounded-2xl shadow-sm"><h3 class="font-bold">Inflix Gold Total™</h3><p class="text-xs text-blue-600 font-bold uppercase">Multi-Vitamin</p></div>
             <div class="item nutrition p-6 bg-white rounded-2xl shadow-sm"><h3 class="font-bold">Evergreen Sugar™</h3><p class="text-xs text-blue-600 font-bold uppercase">Sugar Substitute</p></div>
             <div class="item nutrition p-6 bg-white rounded-2xl shadow-sm"><h3 class="font-bold">ParaCeta-500™</h3><p class="text-xs text-blue-600 font-bold uppercase">Pediatric Care</p></div>
             <div class="item nutrition p-6 bg-white rounded-2xl shadow-sm"><h3 class="font-bold">SilverFlix-LB™</h3><p class="text-xs text-blue-600 font-bold uppercase">Gastro-Care</p></div>
-            
             <div class="item anti p-6 bg-white rounded-2xl shadow-sm"><h3 class="font-bold">AddMont™</h3><p class="text-xs text-blue-600 font-bold uppercase">Anti-Allergic</p></div>
             <div class="item anti p-6 bg-white rounded-2xl shadow-sm"><h3 class="font-bold">DSR-PAN™</h3><p class="text-xs text-blue-600 font-bold uppercase">Acid Control</p></div>
             <div class="item anti p-6 bg-white rounded-2xl shadow-sm"><h3 class="font-bold">FineFungi™</h3><p class="text-xs text-blue-600 font-bold uppercase">Anti-Fungal</p></div>

@@ -8,7 +8,6 @@
     <style>
         .slider { animation: slide 15s infinite; position: absolute; inset: 0; opacity: 0; }
         @keyframes slide { 0%, 30% { opacity: 1; } 33%, 97% { opacity: 0; } 100% { opacity: 1; } }
-        .item { transition: all 0.3s ease; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900">
@@ -30,63 +29,44 @@
 
     <!-- Hero Slider -->
     <section id="home" class="relative h-[500px] bg-slate-900 text-white overflow-hidden">
-        <div class="slider" style="animation-delay: 0s;">
-            <img src="hero1.jpg" class="w-full h-full object-cover opacity-50">
-            <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-6"><h1 class="text-5xl font-bold mb-4">Innovation for Healthier Lives</h1></div>
-        </div>
-        <div class="slider" style="animation-delay: 5s;">
-            <img src="hero2.jpg" class="w-full h-full object-cover opacity-50">
-            <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-6"><h1 class="text-5xl font-bold mb-4">Integrity in Every Dose</h1></div>
-        </div>
-        <div class="slider" style="animation-delay: 10s;">
-            <img src="hero20.jpg" class="w-full h-full object-cover opacity-50">
-            <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-6"><h1 class="text-5xl font-bold mb-4">Quality Without Compromise</h1></div>
-        </div>
+        <div class="slider" style="animation-delay: 0s;"><img src="hero1.jpg" class="w-full h-full object-cover opacity-50"><div class="absolute inset-0 flex items-center justify-center text-center px-6"><h1 class="text-5xl font-bold">Innovation for Healthier Lives</h1></div></div>
+        <div class="slider" style="animation-delay: 5s;"><img src="hero2.jpg" class="w-full h-full object-cover opacity-50"><div class="absolute inset-0 flex items-center justify-center text-center px-6"><h1 class="text-5xl font-bold">Integrity in Every Dose</h1></div></div>
+        <div class="slider" style="animation-delay: 10s;"><img src="hero20.jpg" class="w-full h-full object-cover opacity-50"><div class="absolute inset-0 flex items-center justify-center text-center px-6"><h1 class="text-5xl font-bold">Quality Without Compromise</h1></div></div>
     </section>
 
-    <!-- Vision & Values (As per image_963bca.png) -->
-    <section id="vision" class="py-20 bg-white">
-        <div class="max-w-6xl mx-auto px-8 text-center">
-            <h2 class="text-3xl font-bold mb-16">Our Vision & Core Values</h2>
-            <div class="grid md:grid-cols-4 gap-8">
-                <div><i class="fa-solid fa-handshake text-3xl text-green-600 mb-4"></i><h4 class="font-bold mb-2">Passion for healing</h4><p class="text-sm text-slate-600">Driven by a deep purpose: improving lives through science.</p></div>
-                <div><i class="fa-solid fa-shield-halved text-3xl text-green-600 mb-4"></i><h4 class="font-bold mb-2">Trust & Transparency</h4><p class="text-sm text-slate-600">Upholding the highest ethical standards in all we do.</p></div>
-                <div><i class="fa-solid fa-comments text-3xl text-green-600 mb-4"></i><h4 class="font-bold mb-2">Effective Communication</h4><p class="text-sm text-slate-600">Clear communication is key to healing and innovation.</p></div>
-                <div><i class="fa-solid fa-medal text-3xl text-green-600 mb-4"></i><h4 class="font-bold mb-2">Uncompromised Integrity</h4><p class="text-sm text-slate-600">Committed to what's right for our patients and planet.</p></div>
-            </div>
-        </div>
-    </section>
+    <!-- Vision & Awards -->
+    <section id="vision" class="py-20 bg-white"><div class="max-w-6xl mx-auto px-8 text-center"><h2 class="text-3xl font-bold mb-8">Our Vision & Core Values</h2></div></section>
+    <section id="awards" class="py-20 bg-slate-100 text-center"><div class="max-w-6xl mx-auto px-8"><h2 class="text-3xl font-bold mb-4">Awards and Certification</h2><p class="text-slate-600">Committed to excellence in quality assurance and pharmaceutical standards.</p></div></section>
 
-    <!-- Awards Section (As per image_95d5b1.png) -->
-    <section id="awards" class="py-20 bg-slate-100 text-center">
-        <div class="max-w-6xl mx-auto px-8">
-            <h2 class="text-3xl font-bold mb-8">Awards and Certification</h2>
-            <p class="text-slate-600">Committed to excellence in quality assurance and pharmaceutical standards.</p>
-        </div>
-    </section>
-
-    <!-- Products -->
+    <!-- Product Portfolio -->
     <main id="products" class="max-w-6xl mx-auto px-8 py-20">
         <h2 class="text-3xl font-bold text-center mb-12">Product Portfolio</h2>
-        <div class="grid md:grid-cols-3 gap-8">
-            <!-- Product List -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div class="bg-white p-6 rounded-xl border border-slate-200"><h3 class="font-bold">SPPlus™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Pain Management</p><p class="text-sm text-slate-600">Serratiopeptidase + Aceclofenac + Paracetamol. Unique TSSR technology.</p></div>
-            <!-- (Add all remaining 19 products here) -->
+            <div class="bg-white p-6 rounded-xl border border-slate-200"><h3 class="font-bold">AddMont™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Anti-Allergic</p><p class="text-sm text-slate-600">Montelukast + Levocetirizine. Bi-layered tablet for superior stability.</p></div>
+            <div class="bg-white p-6 rounded-xl border border-slate-200"><h3 class="font-bold">BanGrain™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Migraine Management</p><p class="text-sm text-slate-600">Domperidone + Flunarizine + Ketorolac. Powerful migraine relief.</p></div>
+            <div class="bg-white p-6 rounded-xl border border-slate-200"><h3 class="font-bold">BoldSpas™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Anti-Spasmodic</p><p class="text-sm text-slate-600">Drotaverine + Mefenamic Acid. Relief for abdominal and renal colic.</p></div>
+            <div class="bg-white p-6 rounded-xl border border-slate-200"><h3 class="font-bold">DicloHitt™ Aqua</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Pain Injection</p><p class="text-sm text-slate-600">Diclofenac Sodium (Aqueous base). Pain-free injection.</p></div>
+            <div class="bg-white p-6 rounded-xl border border-slate-200"><h3 class="font-bold">Dkrt-6™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Corticosteroid</p><p class="text-sm text-slate-600">Deflazacort 6mg. Safe and effective inflammation management.</p></div>
+            <div class="bg-white p-6 rounded-xl border border-slate-200"><h3 class="font-bold">Double Diclo™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Topical Pain</p><p class="text-sm text-slate-600">Diclofenac + Menthol. QDS system technology.</p></div>
+            <div class="bg-white p-6 rounded-xl border border-slate-200"><h3 class="font-bold">DSR-PAN™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Acid Control</p><p class="text-sm text-slate-600">Domperidone + Pantoprazole. 24-hour protection.</p></div>
+            <div class="bg-white p-6 rounded-xl border border-slate-200"><h3 class="font-bold">Evergreen Sugar™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Sugar Substitute</p><p class="text-sm text-slate-600">Sucralose + Tulsi + Alfa-Alfa. Zero-calorie drops.</p></div>
+            <div class="bg-white p-6 rounded-xl border border-slate-200"><h3 class="font-bold">FineFungi™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Anti-Fungal</p><p class="text-sm text-slate-600">Terbinafine + Beclomethasone. Eradicates fungal infections.</p></div>
+            <div class="bg-white p-6 rounded-xl border border-slate-200"><h3 class="font-bold">Fix-OZ™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Anti-Infective</p><p class="text-sm text-slate-600">Ofloxacin + Ornidazole. For mixed infections.</p></div>
+            <div class="bg-white p-6 rounded-xl border border-slate-200"><h3 class="font-bold">FixJoy-200™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Antibiotic</p><p class="text-sm text-slate-600">Cefixime + Lactic Acid Bacillus. Trusted therapy.</p></div>
+            <div class="bg-white p-6 rounded-xl border border-slate-200"><h3 class="font-bold">HittVit-12™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Neuro-Care</p><p class="text-sm text-slate-600">Vitamin B12 + Folic Acid + Niacinamide.</p></div>
+            <div class="bg-white p-6 rounded-xl border border-slate-200"><h3 class="font-bold">inflix-Gold™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Multinutrient</p><p class="text-sm text-slate-600">36 Power Nutrients for stamina and immunity.</p></div>
+            <div class="bg-white p-6 rounded-xl border border-slate-200"><h3 class="font-bold">inflix-Gold™ (Sachet)</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Energy Booster</p><p class="text-sm text-slate-600">L-Carnitine + Taurine + Ginseng.</p></div>
+            <div class="bg-white p-6 rounded-xl border border-slate-200"><h3 class="font-bold">Inflix Gold Total™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Multi-Vitamin</p><p class="text-sm text-slate-600">Comprehensive syrup with Alphonso Mango flavor.</p></div>
+            <div class="bg-white p-6 rounded-xl border border-slate-200"><h3 class="font-bold">ParaCeta-500™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Pediatric Care</p><p class="text-sm text-slate-600">Paracetamol 500mg/5ml. Fast absorption.</p></div>
+            <div class="bg-white p-6 rounded-xl border border-slate-200"><h3 class="font-bold">ParaCeta™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Analgesic</p><p class="text-sm text-slate-600">Paracetamol 500/650mg. Safe analgesic.</p></div>
+            <div class="bg-white p-6 rounded-xl border border-slate-200"><h3 class="font-bold">Plus-P™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Analgesic</p><p class="text-sm text-slate-600">Aceclofenac + Paracetamol.</p></div>
+            <div class="bg-white p-6 rounded-xl border border-slate-200"><h3 class="font-bold">SilverFlix-LB™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Gastro-Care</p><p class="text-sm text-slate-600">Lactic Acid Spores + B-Complex.</p></div>
         </div>
     </main>
 
-    <!-- Footer -->
-    <footer id="contact" class="bg-slate-900 text-white py-12 px-8">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
-            <p class="text-sm text-slate-400">&copy; 2026 Inflix Pharma Private Limited</p>
-            <div class="flex gap-6 text-xl">
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="mailto:inflixpharma@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-                <a href="https://wa.me/918874438874"><i class="fa-brands fa-whatsapp"></i></a>
-            </div>
-        </div>
-    </footer>
+    <!-- Partners & Footer -->
+    <section id="partners" class="py-20 bg-white text-center"><div class="max-w-6xl mx-auto px-8"><h2 class="text-3xl font-bold mb-8">Our Partners</h2></div></section>
+    <footer id="contact" class="bg-slate-900 text-white py-12 px-8 text-center"><p>&copy; 2026 Inflix Pharma Private Limited</p></footer>
 </body>
 </html>

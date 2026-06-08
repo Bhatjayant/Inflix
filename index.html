@@ -8,11 +8,12 @@
     <style>
         .slider { animation: slide 15s infinite; }
         @keyframes slide { 0%, 30% { opacity: 1; } 33%, 97% { opacity: 0; } 100% { opacity: 1; } }
+        .item { transition: all 0.3s ease; }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900">
 
-    <!-- Header with Logo -->
+    <!-- Header -->
     <header class="bg-white border-b border-slate-200 py-6 px-8 sticky top-0 z-50">
         <div class="max-w-6xl mx-auto flex items-center justify-between">
             <img src="image_97944d.jpg" alt="Inflix Pharma Logo" class="h-12">
@@ -24,51 +25,71 @@
         </div>
     </header>
 
-    <!-- Hero Slider -->
-    <section id="home" class="relative h-[500px] bg-slate-900 text-white flex items-center justify-center overflow-hidden">
-        <div class="slider absolute text-center px-6">
-            <h1 class="text-6xl font-bold mb-4">Innovation for Healthier Lives</h1>
-            <p class="text-xl text-slate-400">Leading the future of clinical pharmaceutical solutions.</p>
+    <!-- Hero Slider using your uploaded files -->
+    <section id="home" class="relative h-[500px] bg-slate-900 text-white overflow-hidden">
+        <div class="slider absolute inset-0">
+            <img src="hero1.jpg" class="w-full h-full object-cover opacity-50">
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+                <h1 class="text-5xl font-bold mb-4">Innovation for Healthier Lives</h1>
+            </div>
         </div>
-        <div class="slider absolute text-center px-6 opacity-0" style="animation-delay: 5s;">
-            <h1 class="text-6xl font-bold mb-4">Integrity in Every Dose</h1>
-            <p class="text-xl text-slate-400">Committed to global health and patient safety standards.</p>
+        <div class="slider absolute inset-0 opacity-0" style="animation-delay: 5s;">
+            <img src="hero2.jpg" class="w-full h-full object-cover opacity-50">
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+                <h1 class="text-5xl font-bold mb-4">Integrity in Every Dose</h1>
+            </div>
         </div>
-        <div class="slider absolute text-center px-6 opacity-0" style="animation-delay: 10s;">
-            <h1 class="text-6xl font-bold mb-4">Quality Without Compromise</h1>
-            <p class="text-xl text-slate-400">Science-backed solutions you can trust.</p>
+        <div class="slider absolute inset-0 opacity-0" style="animation-delay: 10s;">
+            <img src="hero20.jpg" class="w-full h-full object-cover opacity-50">
+            <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-6">
+                <h1 class="text-5xl font-bold mb-4">Quality Without Compromise</h1>
+            </div>
         </div>
     </section>
 
-    <!-- Products -->
+    <!-- Product Catalog -->
     <main id="products" class="max-w-6xl mx-auto px-8 py-16">
-        <h2 class="text-3xl font-bold mb-12 text-center">Product Portfolio</h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Products restored from previous step -->
-            <div class="bg-white p-6 rounded-xl border border-slate-200"><h3 class="font-bold">SPPlus™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Pain Management</p><p class="text-sm text-slate-600">Serratiopeptidase + Aceclofenac + Paracetamol. Unique TSSR technology.</p></div>
-            <div class="bg-white p-6 rounded-xl border border-slate-200"><h3 class="font-bold">AddMont™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Anti-Allergic</p><p class="text-sm text-slate-600">Montelukast + Levocetirizine. Bi-layered tablet for superior stability.</p></div>
-            <div class="bg-white p-6 rounded-xl border border-slate-200"><h3 class="font-bold">BanGrain™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Migraine Relief</p><p class="text-sm text-slate-600">Domperidone + Flunarizine + Ketorolac. A powerful formula for migraine attacks.</p></div>
-            <div class="bg-white p-6 rounded-xl border border-slate-200"><h3 class="font-bold">BoldSpas™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Anti-Spasmodic</p><p class="text-sm text-slate-600">Drotaverine + Mefenamic Acid. Proven relief for abdominal colic.</p></div>
-            <div class="bg-white p-6 rounded-xl border border-slate-200"><h3 class="font-bold">DicloHitt™ Aqua</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Pain Injection</p><p class="text-sm text-slate-600">Diclofenac Sodium (Aqueous). Pain-free injection with no lump formation.</p></div>
-            <div class="bg-white p-6 rounded-xl border border-slate-200"><h3 class="font-bold">Dkrt-6™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Corticosteroid</p><p class="text-sm text-slate-600">Deflazacort 6mg. A safe, effective choice for inflammation.</p></div>
-            <div class="bg-white p-6 rounded-xl border border-slate-200"><h3 class="font-bold">Double Diclo™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Topical Pain</p><p class="text-sm text-slate-600">Diclofenac + Menthol. QDS system technology for fast relief.</p></div>
-            <div class="bg-white p-6 rounded-xl border border-slate-200"><h3 class="font-bold">DSR-PAN™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Acid Control</p><p class="text-sm text-slate-600">Domperidone + Pantoprazole. AI-governed tech for 24-hour protection.</p></div>
-            <div class="bg-white p-6 rounded-xl border border-slate-200"><h3 class="font-bold">Evergreen Sugar™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Sugar Substitute</p><p class="text-sm text-slate-600">Sucralose + Tulsi + Alfa-Alfa. Zero-calorie liquid drops.</p></div>
-            <div class="bg-white p-6 rounded-xl border border-slate-200"><h3 class="font-bold">FineFungi™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Anti-Fungal</p><p class="text-sm text-slate-600">Terbinafine + Beclomethasone. Eradicates tough fungal infections.</p></div>
-            <div class="bg-white p-6 rounded-xl border border-slate-200"><h3 class="font-bold">Fix-OZ™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Anti-Infective</p><p class="text-sm text-slate-600">Ofloxacin + Ornidazole. Quick action formula for mixed infections.</p></div>
-            <div class="bg-white p-6 rounded-xl border border-slate-200"><h3 class="font-bold">FixJoy-200™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Antibiotic</p><p class="text-sm text-slate-600">Cefixime + Lactic Acid Bacillus. Trusted first-line therapy.</p></div>
-            <div class="bg-white p-6 rounded-xl border border-slate-200"><h3 class="font-bold">HittVit-12™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Neuro-Care</p><p class="text-sm text-slate-600">Vitamin B12 + Folic Acid. Rejuvenates nerves and treats neuropathy.</p></div>
-            <div class="bg-white p-6 rounded-xl border border-slate-200"><h3 class="font-bold">inflix-Gold™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Multinutrient</p><p class="text-sm text-slate-600">36 Power Nutrients for stamina, energy, and immunity.</p></div>
-            <div class="bg-white p-6 rounded-xl border border-slate-200"><h3 class="font-bold">inflix-Gold™ (Sachet)</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Energy Booster</p><p class="text-sm text-slate-600">L-Carnitine + Taurine. Synergy Duo for instant daily energy.</p></div>
-            <div class="bg-white p-6 rounded-xl border border-slate-200"><h3 class="font-bold">Inflix Gold Total™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Multi-Vitamin</p><p class="text-sm text-slate-600">Comprehensive multi-vitamin syrup with Alphonso Mango flavor.</p></div>
-            <div class="bg-white p-6 rounded-xl border border-slate-200"><h3 class="font-bold">ParaCeta-500™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Pediatric Care</p><p class="text-sm text-slate-600">Paracetamol oral suspension. Fast absorption for high pyrexia.</p></div>
-            <div class="bg-white p-6 rounded-xl border border-slate-200"><h3 class="font-bold">ParaCeta™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Analgesic</p><p class="text-sm text-slate-600">Paracetamol 500/650mg. Safe for pregnancy and old age.</p></div>
-            <div class="bg-white p-6 rounded-xl border border-slate-200"><h3 class="font-bold">Plus-P™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Analgesic</p><p class="text-sm text-slate-600">Aceclofenac + Paracetamol. Smart way to tackle pain.</p></div>
-            <div class="bg-white p-6 rounded-xl border border-slate-200"><h3 class="font-bold">SilverFlix-LB™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Gastro-Care</p><p class="text-sm text-slate-600">Lactic Acid Spores + B-Complex. Healthy living starting in the gut.</p></div>
+        <div class="flex flex-wrap gap-4 justify-center mb-12">
+            <button onclick="filter('all')" class="px-6 py-2 bg-slate-900 text-white rounded-full">All</button>
+            <button onclick="filter('pain')" class="px-6 py-2 bg-white border border-slate-200 rounded-full hover:bg-green-50">Pain & Neuro</button>
+            <button onclick="filter('nutrition')" class="px-6 py-2 bg-white border border-slate-200 rounded-full hover:bg-green-50">Nutrition</button>
+            <button onclick="filter('anti')" class="px-6 py-2 bg-white border border-slate-200 rounded-full hover:bg-green-50">Anti-Infective</button>
+        </div>
+
+        <div id="grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Product Cards -->
+            <div class="item pain bg-white p-6 rounded-xl border border-slate-200 hover:border-green-600"><h3 class="font-bold">SPPlus™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Pain Management</p><p class="text-sm text-slate-600">Serratiopeptidase + Aceclofenac + Paracetamol. Unique TSSR technology for effective pain relief.</p></div>
+            <div class="item anti bg-white p-6 rounded-xl border border-slate-200 hover:border-green-600"><h3 class="font-bold">AddMont™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Anti-Allergic</p><p class="text-sm text-slate-600">Montelukast + Levocetirizine. Bi-layered tablet for superior stability.</p></div>
+            <div class="item pain bg-white p-6 rounded-xl border border-slate-200 hover:border-green-600"><h3 class="font-bold">BanGrain™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Migraine Management</p><p class="text-sm text-slate-600">Domperidone + Flunarizine + Ketorolac. A powerful formula for migraine attacks.</p></div>
+            <div class="item pain bg-white p-6 rounded-xl border border-slate-200 hover:border-green-600"><h3 class="font-bold">BoldSpas™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Anti-Spasmodic</p><p class="text-sm text-slate-600">Drotaverine + Mefenamic Acid. Proven relief for abdominal and renal colic.</p></div>
+            <div class="item pain bg-white p-6 rounded-xl border border-slate-200 hover:border-green-600"><h3 class="font-bold">DicloHitt™ Aqua</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Pain Injection</p><p class="text-sm text-slate-600">Diclofenac Sodium (Aqueous base). Pain-free injection with no lump formation.</p></div>
+            <div class="item pain bg-white p-6 rounded-xl border border-slate-200 hover:border-green-600"><h3 class="font-bold">Dkrt-6™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Corticosteroid</p><p class="text-sm text-slate-600">Deflazacort 6mg. A safe, effective choice for managing inflammation.</p></div>
+            <div class="item pain bg-white p-6 rounded-xl border border-slate-200 hover:border-green-600"><h3 class="font-bold">Double Diclo™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Topical Pain</p><p class="text-sm text-slate-600">Diclofenac + Menthol. QDS system technology for fast relief.</p></div>
+            <div class="item anti bg-white p-6 rounded-xl border border-slate-200 hover:border-green-600"><h3 class="font-bold">DSR-PAN™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Acid Control</p><p class="text-sm text-slate-600">Domperidone + Pantoprazole. AI-governed tech for 24-hour protection.</p></div>
+            <div class="item nutrition bg-white p-6 rounded-xl border border-slate-200 hover:border-green-600"><h3 class="font-bold">Evergreen Sugar™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Sugar Substitute</p><p class="text-sm text-slate-600">Sucralose + Tulsi + Alfa-Alfa. Zero-calorie liquid drops for health-conscious.</p></div>
+            <div class="item anti bg-white p-6 rounded-xl border border-slate-200 hover:border-green-600"><h3 class="font-bold">FineFungi™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Anti-Fungal</p><p class="text-sm text-slate-600">Terbinafine + Beclomethasone. Eradicates tough fungal infections and heals skin.</p></div>
+            <div class="item anti bg-white p-6 rounded-xl border border-slate-200 hover:border-green-600"><h3 class="font-bold">Fix-OZ™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Anti-Infective</p><p class="text-sm text-slate-600">Ofloxacin + Ornidazole. Quick action formula for mixed infections.</p></div>
+            <div class="item anti bg-white p-6 rounded-xl border border-slate-200 hover:border-green-600"><h3 class="font-bold">FixJoy-200™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Antibiotic</p><p class="text-sm text-slate-600">Cefixime + Lactic Acid Bacillus. Trusted first-line therapy for infections.</p></div>
+            <div class="item pain bg-white p-6 rounded-xl border border-slate-200 hover:border-green-600"><h3 class="font-bold">HittVit-12™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Neuro-Care</p><p class="text-sm text-slate-600">Vitamin B12 + Folic Acid + Niacinamide. Rejuvenates nerves and treats neuropathy.</p></div>
+            <div class="item nutrition bg-white p-6 rounded-xl border border-slate-200 hover:border-green-600"><h3 class="font-bold">inflix-Gold™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Multinutrient</p><p class="text-sm text-slate-600">36 Power Nutrients for stamina, energy, and immunity. Vital for daily health.</p></div>
+            <div class="item nutrition bg-white p-6 rounded-xl border border-slate-200 hover:border-green-600"><h3 class="font-bold">inflix-Gold™ (Sachet)</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Energy Booster</p><p class="text-sm text-slate-600">L-Carnitine + Taurine + Ginseng. Synergy Duo for instant energy and performance.</p></div>
+            <div class="item nutrition bg-white p-6 rounded-xl border border-slate-200 hover:border-green-600"><h3 class="font-bold">Inflix Gold Total™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Multi-Vitamin</p><p class="text-sm text-slate-600">Comprehensive multi-vitamin syrup with Alphonso Mango flavor for all ages.</p></div>
+            <div class="item nutrition bg-white p-6 rounded-xl border border-slate-200 hover:border-green-600"><h3 class="font-bold">ParaCeta-500™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Pediatric Care</p><p class="text-sm text-slate-600">Paracetamol 500mg/5ml. Fast absorption for high pyrexia and headache.</p></div>
+            <div class="item pain bg-white p-6 rounded-xl border border-slate-200 hover:border-green-600"><h3 class="font-bold">ParaCeta™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Analgesic</p><p class="text-sm text-slate-600">Paracetamol 500/650mg. Safe for old age, pregnancy, and cardiovascular patients.</p></div>
+            <div class="item pain bg-white p-6 rounded-xl border border-slate-200 hover:border-green-600"><h3 class="font-bold">Plus-P™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Analgesic</p><p class="text-sm text-slate-600">Aceclofenac + Paracetamol. Smart way to tackle pain and inflammation.</p></div>
+            <div class="item nutrition bg-white p-6 rounded-xl border border-slate-200 hover:border-green-600"><h3 class="font-bold">SilverFlix-LB™</h3><p class="text-xs text-green-700 font-bold uppercase mb-2">Gastro-Care</p><p class="text-sm text-slate-600">Lactic Acid Spores + B-Complex. Healthy living starting in the gut.</p></div>
         </div>
     </main>
 
     <!-- Floating WhatsApp -->
     <a href="https://wa.me/918874438874" class="fixed right-6 bottom-6 bg-green-500 text-white p-4 rounded-full shadow-2xl z-50 text-xl"><i class="fa-brands fa-whatsapp"></i></a>
+
+    <script>
+        function filter(c) {
+            document.querySelectorAll('.item').forEach(i => {
+                i.style.display = (c === 'all' || i.classList.contains(c)) ? 'block' : 'none';
+            });
+        }
+    </script>
 </body>
 </html>

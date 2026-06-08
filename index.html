@@ -2,49 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Inflix Pharma | Elite Clinical Portfolio</title>
+    <title>Inflix Pharma | Official Product Database</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@200;400&display=swap');
-        .serif { font-family: 'Playfair Display', serif; }
-        .sans { font-family: 'Inter', sans-serif; }
+        body { font-family: 'Inter', sans-serif; }
     </style>
 </head>
-<body class="bg-[#F8F7F2] text-[#1A1A1A]">
+<body class="bg-slate-50">
 
-    <!-- Elite Navigation -->
-    <nav class="flex justify-between items-center px-16 py-12">
-        <div class="text-3xl font-bold tracking-tighter serif">INFLIX</div>
-        <div class="flex gap-12 text-xs uppercase tracking-[0.2em] font-light sans">
-            <a href="#" class="hover:underline">Collection</a>
-            <a href="#" class="hover:underline">Science</a>
-            <a href="#" class="hover:underline">Contact</a>
+    <!-- Header -->
+    <header class="bg-slate-900 text-white py-16 px-8">
+        <div class="max-w-5xl mx-auto">
+            <h1 class="text-5xl font-bold tracking-tighter mb-4">INFLIX PHARMA</h1>
+            <p class="text-slate-400 max-w-lg">Advanced clinical formulations. Precision-engineered for global wellness standards.</p>
         </div>
-    </nav>
-
-    <!-- Editorial Header -->
-    <header class="px-16 pb-24">
-        <h1 class="text-[120px] leading-[0.9] serif">Precision<br>Formulations.</h1>
-        <p class="max-w-md mt-8 text-xl font-light sans opacity-60">Architecting the future of clinical wellness through molecular integrity.</p>
     </header>
 
-    <!-- The Product Gallery -->
-    <section class="px-16 py-24 border-t border-black/10">
-        <div class="grid grid-cols-4 gap-x-12 gap-y-24">
-            <!-- Example Product Structure -->
-            <div class="group cursor-pointer">
-                <div class="h-64 bg-[#EAE8E1] mb-6 grayscale group-hover:grayscale-0 transition-all"></div>
-                <h3 class="text-xl serif">SPPlus™</h3>
-                <p class="text-[10px] uppercase tracking-widest mt-2 opacity-50">Pain Management</p>
+    <!-- Catalog Section -->
+    <main class="max-w-5xl mx-auto px-8 py-16">
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Product Cards -->
+            <div class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm">
+                <h3 class="text-xl font-semibold mb-2">SPPlus™</h3>
+                <p class="text-sm text-blue-600 font-bold mb-4">PAIN MANAGEMENT</p>
+                <p class="text-slate-600 text-sm">Serratiopeptidase + Aceclofenac + Paracetamol. Unique TSSR technology for rapid inflammation relief.</p>
             </div>
-            <!-- Repeat this block for all 20 products -->
-        </div>
-    </section>
+            
+            <div class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm">
+                <h3 class="text-xl font-semibold mb-2">Fix-OZ™</h3>
+                <p class="text-sm text-blue-600 font-bold mb-4">ANTI-INFECTIVE</p>
+                <p class="text-slate-600 text-sm">Ofloxacin + Ornidazole. Quick-action formula for mixed origin infections.</p>
+            </div>
 
-    <!-- Floating Actions -->
-    <div class="fixed bottom-12 right-12 flex flex-col gap-4">
-        <a href="https://wa.me/918874438874" class="text-xs uppercase bg-black text-white px-8 py-4 rounded-full">Contact Advisor</a>
-    </div>
+            <!-- (Continue this structure for all 20 products) -->
+        </div>
+    </main>
+
+    <!-- Professional Footer -->
+    <footer class="bg-white border-t border-slate-200 py-12 text-center text-slate-500 text-sm">
+        <p>H.No 40, Panchkula-III, Chpraula, Noida, UP | info@inflixpharma.com</p>
+    </footer>
 
 </body>
 </html>

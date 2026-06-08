@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222 47% 11%;
+    --accent: 199 89% 48%; /* Professional Medical Blue */
+  }
+
+  body {
+    @apply bg-white text-slate-900 antialiased selection:bg-blue-100;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3 {
+    @apply font-serif tracking-tight text-slate-950;
+  }
+}

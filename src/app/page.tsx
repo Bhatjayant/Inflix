@@ -1,5 +1,6 @@
 'use client';
 import ProductShowcase from '../components/ProductShowcase';
+import ScienceSection from '../components/ScienceSection';
 import ContactSection from '../components/ContactSection';
 
 export default function Home() {
@@ -15,6 +16,9 @@ export default function Home() {
           rooted in clinical integrity and innovative scientific research.
         </p>
       </section>
+
+      {/* Science Section */}
+      <ScienceSection />
 
       {/* Product Section */}
       <ProductShowcase />
